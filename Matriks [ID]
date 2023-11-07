@@ -107,7 +107,7 @@ if (x == 'y' || x =='Y'){
 }else if(x == 't' || x == 'T'){
 	cout << "Program Selesai.";
 }else{
-	cout << "Tidak Valid. Program Selesai."
+	cout << "Tidak Valid. Program Selesai.";
 }
 
 
