@@ -100,7 +100,7 @@ main (){
     	}
 	}
 
-cout << "Apakah anda ingin memakai program ini lagi? (y/t)" << endl;
+cout << "\nApakah anda ingin memakai program ini lagi? (y/t)" << endl;
 cin >> x; 
 if (x == 'y' || x =='Y'){
 	goto ulang ;
