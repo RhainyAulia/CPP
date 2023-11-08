@@ -26,5 +26,14 @@ main (){
 		cout << endl;
 	}
 	
+	cout << "\n\t\t\t GEROBAK FRIED CHICKEN" << endl <<
+	"------------------------------------------------------------------------" << endl <<
+	"\tNo. \tJenis   \t Harga   \tBanyak   \tJumlah" << endl <<
+	"\t \tPotong   \tSatuan   \t Beli \t\t Harga" << endl <<
+	"------------------------------------------------------------------------" << endl ;
+	
+	
+	
+	
 	
 }
