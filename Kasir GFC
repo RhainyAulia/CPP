@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+main (){
+	
+	string Kode[]={"D", "P", "S"}, 
+		Potong[]={"Dada", "Paha", "Sayap"},
+		j;
+	int Harga[]={2500, 2000, 1500},
+		i,qj, p;
+		
+	cout << "\t GEROBAK FRIED CHICHKEN" << endl <<
+	"----------------------------------------" << endl <<
+	"\tKode \tJenis \tHarga" << endl <<
+	"----------------------------------------" << endl;
+	
+	for (i=0; i<3; i++){
+		cout << "\t" << Kode[i] << " \t" << Potong[i] << "\t" << Harga [i];
+		cout << endl;
+	}
+	
+	cout << "\n\tBanyak Jenis = "; cin >> qj;
+	for (i=0; i<qj; i++){
+		cout << "\tJenis Potong Ke - " << i+1 << " [D/P/S] = "; cin >>j;
+		cout << "\tBanyak Potong Ke - " << i+1 << " = " ; cin >> p;
+		cout << endl;
+	}
+	
+	
+}
