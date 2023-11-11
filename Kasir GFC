@@ -32,9 +32,6 @@ main (){
 	"\t \tPotong   \tSatuan   \t Beli \t\t Harga" << endl <<
 	"------------------------------------------------------------------------" << endl ;
 	
-			
-	for (i = 0; i < qj; i++) {
-		
 		if (jn == "D"| jn == "d") {
     		j = 0;
 		} if (jn == "P" || jn == "p") {
@@ -45,6 +42,10 @@ main (){
 		    cout << "Error";
 		}
 		
+	
+	for (i = 0; i < qj; i++) {
+		
+	
         cout << "\t" << i + 1 << ". \t" << Potong[j] << "\t\t Rp. " << Harga[j] << "\t   " << p[i] << "\t       Rp. ";
 		
 		Total =+ Harga[i] * p[i];
