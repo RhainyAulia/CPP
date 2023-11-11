@@ -5,10 +5,10 @@ int main (){
 	
 	string Kode[]={"D", "P", "S"}, 
 		Potong[]={"Dada", "Paha", "Sayap"},
-		jn;
+		jn[3];
 	int Harga[]={2500, 2000, 1500},
 		p[3],
-		i,qj, j, Total, JB=0, p1=0;
+		i,qj, j[3], Total, JB=0, p1=0;
 		
 	cout << "\t GEROBAK FRIED CHICHKEN" << endl <<
 	"----------------------------------------" << endl <<
@@ -22,7 +22,7 @@ int main (){
 	
 	cout << "\n\tBanyak Jenis = "; cin >> qj;
 	for (i=0; i<qj; i++){
-		cout << "\n\tJenis Potong Ke - " << i+1 << " [D/P/S] = "; cin >>jn;
+		cout << "\n\tJenis Potong Ke - " << i+1 << " [D/P/S] = "; cin >>jn[i];
 		cout << "\tBanyak Potong Ke - " << i+1 << " = " ; cin >> p[i];
 	}
 	
@@ -34,20 +34,21 @@ int main (){
 	
 	for (i = 0; i < qj; i++) {
 		
-		if (jn == "D"| jn == "d") {
-    		j = 0;
-		} if (jn == "P" || jn == "p") {
-		    j = 1;
-		} if (jn == "S" || jn == "s") {
-		    j = 2;
+		Total = 0;
+		
+		if (jn[i] == "D"|| jn[i] == "d") {
+    		j[i] = 0;
+		} else if (jn[i] == "P" || jn[i] == "p") {
+		    j[i] = 1;
+		} else if (jn[i] == "S" || jn[i] == "s") {
+		    j[i] = 2;
 		} else {
 		    cout << "Error";
 		}
 	
-        cout << "\t" << i + 1 << ". \t" << Potong[i] << "\t\t Rp. " << Harga[i] << "\t   " << p[i] << "\t       Rp. ";
-		
-		Total =+ Harga[i] * p[i];
-		
+        cout << "\t" << i + 1 << ". \t" << Potong[j[i]] << "\t\t Rp. " << Harga[j[i]] << "\t   " << p[i] << "\t       Rp. ";
+
+		Total += Harga[j[i]] * p[i];
 		cout << Total << endl;
 		JB += Total;
 
