@@ -21,15 +21,16 @@ int main (){
 	int Pil, i, Ulang=1;
 	float s,r,t,L;
 	
+	cout << "===============================================================" << endl
+		 << "Program Menghitung Luas Persegi, Luas Lingkaran & Volume Tabung" << endl 
+		 << "===============================================================" << endl
+		 << "\nPilih Program : " << endl
+		 << "1. Luas Persegi"<< endl
+		 << "2. Luas Lingkaran" << endl
+		 << "3. Volume Tabung" << endl;
+			 
 	for (i=0; i<Ulang; i++){
-		cout << "===============================================================" << endl
-			 << "Program Menghitung Luas Persegi, Luas Lingkaran & Volume Tabung" << endl 
-			 << "===============================================================" << endl
-			 << "\nPilih Program : " << endl
-			 << "1. Luas Persegi"<< endl
-			 << "2. Luas Lingkaran" << endl
-			 << "3. Volume Tabung" << endl
-			 << "\nMasukkan Pilihan (1/2/3): ";
+		cout << "\nMasukkan Pilihan (1/2/3): ";
 			 
 		cin >> Pil;
 		
@@ -59,10 +60,10 @@ int main (){
 		}
 		
 		char yn;
-        cout << "\n\nApakah anda ingin menghitung ulang? (y/n) ";
+        cout << "\n\nApakah anda ingin menghitung lagi? (y/n) ";
         cin >> yn;
 
-        if (yn == 'y' || yn == 'Y') {
+        if (yn == 'y' || yn == 'Y') {  
         	Ulang++;
 		}else{
 			cout << "Program Selesai.";
